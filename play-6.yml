@@ -1,0 +1,17 @@
+---
+- name: copy files
+  hosts: all
+  become: yes
+  tasks:
+
+  - apt: 
+     name: cowsay
+     state: latest
+
+  - apt:
+     name: cmatrix
+     state: latest
+
+  - apt:
+     name: mc
+     state: latest

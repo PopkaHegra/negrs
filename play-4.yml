@@ -1,0 +1,13 @@
+---
+- name: create directory
+  hosts: all
+  become: no
+  tasks:
+
+  - file:
+      path: ~/Project10
+      state: directory
+
+  - file:
+     path: ~/Ansible10
+     state: directory

@@ -1,0 +1,9 @@
+---
+- name: copy files
+  hosts: all
+  become: no
+  tasks:
+
+  - copy:
+      src: /home/user/demo/play-5/
+      dest: /home/user/demo/play5/

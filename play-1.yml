@@ -1,0 +1,8 @@
+---
+- name: ping
+  hosts: all
+  become: no
+  tasks:
+
+  - ping:
+
